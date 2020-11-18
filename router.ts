@@ -23,8 +23,8 @@ router.get('/pokemones', PokemonController.getAll);
 router.get('/pokemones/number/:number', PokemonController.getNumber);
 router.get('/pokemones/name/:name', PokemonController.getName);
 router.get('/pokemones/type/:type', PokemonController.getType);
-router.get('/pokemones/fuerte/:name', PokemonController.getFuerte);
-router.get('/pokemones/debil/:name', PokemonController.getDebil);
+router.get('/pokemones/fuerte/:name', PokemonController.getFuerte); // Trae Contra quienes el es fuerte
+router.get('/pokemones/debil/:name', PokemonController.getDebil); // Trae contra quienes el es Debil 
 router.get('/pokemones/create/:id/:name/:nombreTipo/:fuerteTipo/:debilTipo/:img', PokemonController.getCreate);
 
 // router.get('/pokemones/fuerte/:name', PokemonController.getFuerte);

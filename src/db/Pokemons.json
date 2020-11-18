@@ -28,7 +28,7 @@
     },
     {
         "name": "psyduck",
-        "number": 3,
+        "number": 4,
         "type":[
             { "name": "Agua", "strongAgainst": "Fuego", "weakAgainst":"Tierra"}
         ],
