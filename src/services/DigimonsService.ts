@@ -67,7 +67,30 @@ module DigimonsService {
         let matches: Array<DigimonI> = [];
 
         digimons.forEach(pokemon => {
-            const found = pokemon.type.filter(e => e.weakAgainst === type1[0].strongAgainst);
+            const found = pokemon.type.filter(e => e.weakAgainst === type1[0].name);
+            if (found.length > 0) {
+                matches.push(pokemon);
+            }
+        })
+        if (matches.length < 1) {
+            throw "No se encontro el tipo";
+        }
+        // const pokemon : Array<DigimonI> = pokemones.filter(e=>e.name === name);
+
+        return matches;
+    }
+    export function getDebil(name:string): Array<DigimonI> {
+        const pokemones: Array<DigimonI> = db;
+        // pokemones.filter(name)
+        let pokemon = pokemones.filter(e=>e.name.toLowerCase()=== name.toLowerCase());
+        if(pokemon.length<1){
+            throw "No se encontro el primer pokemon";
+        }
+        const type1 = pokemon[0].type.filter(e=> e.name);
+        let matches: Array<DigimonI> = [];
+
+        pokemones.forEach(pokemon => {
+            const found = pokemon.type.filter(e => e.strongAgainst === type1[0].name);
             if (found.length > 0) {
                 matches.push(pokemon);
             }
@@ -80,5 +103,6 @@ module DigimonsService {
         return matches;
     }
 }
+
 
 export default DigimonsService;

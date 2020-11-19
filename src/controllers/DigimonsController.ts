@@ -56,8 +56,19 @@ export function getCreate(req: Request, res: Response) {
 export function getFuerte(req: Request, res: Response) {
     try {
         const name = req.params.name && req.params.name;
-        if(!name){ throw "Se requiere el ID del digimon."}
+        if(!name){ throw "Se requiere el nombre del digimon."}
         const digimon = DigimonsService.getFuerte(name);
+        res.status(200).json(digimon);
+    } catch (error) {
+        res.status(400).send(error);
+    }
+    
+}
+export function getDebil(req: Request, res: Response) {
+    try {
+        const name = req.params.name && req.params.name;
+        if(!name){ throw "Se requiere el nombre del digimon."}
+        const digimon = DigimonsService.getDebil(name);
         res.status(200).json(digimon);
     } catch (error) {
         res.status(400).send(error);

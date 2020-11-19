@@ -3,25 +3,25 @@
         "id": 1,
         "name": "Agumón",
         "type": [
-            { "name": "Vacuna", "strongAgainst": [], "weakAgainst": [] }
+            { "name": "Vacuna", "strongAgainst": "Virus", "weakAgainst": "Data" }
         ],
         "img": "https://i.pinimg.com/564x/b9/2f/38/b92f3877ccd0ee9749269d5e72ad6832.jpg"
     },
     {
         "id": 2,
-        "name": "Gatomón",
+        "name": "Phelesmon",
         "type": [
-            { "name": "Vacuna", "strongAgainst": [], "weakAgainst": [] }
+            { "name": "Virus", "strongAgainst": "Data", "weakAgainst": "Vacuna" }
         ],
-        "img": "https://vignette.wikia.nocookie.net/tu-digimon/images/e/e4/Gatomon.gif/revision/latest/scale-to-width-down/300?cb=20130127193244&path-prefix=es"
+        "img": "https://static.wikia.nocookie.net/digimon/images/6/60/Phelesmon_b.jpg/revision/latest?cb=20120113232742&path-prefix=es"
     },
     {
         "id": 3,
-        "name": "Gatomón",
+        "name": "Andiramon",
         "type": [
-            { "name": "Vacuna", "strongAgainst": [], "weakAgainst": [] }
+            { "name": "Data", "strongAgainst": "Vacuna", "weakAgainst": "Virus" }
         ],
-        "img": "https://vignette.wikia.nocookie.net/tu-digimon/images/e/e4/Gatomon.gif/revision/latest/scale-to-width-down/300?cb=20130127193244&path-prefix=es"
+        "img": "https://static.wikia.nocookie.net/digimon/images/7/7e/Andiramon_%28Deva%29_b.jpg/revision/latest?cb=20120213133733&path-prefix=es"
     }
 
 ]

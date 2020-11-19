@@ -43,7 +43,7 @@ export function getCreate(req: Request, res: Response) {
         const fuerte = req.params.fuerteTipo && req.params.fuerteTipo ;
         const debil = req.params.debilTipo && req.params.debilTipo ;
         const img = req.params.img && req.params.img ;
-        if(!id){ throw "Se requiere el ID del digimon."}
+        if(!id){ throw "Se requiere el nombre del digimon."}
         const digimon = PokemonsService.getCreate(id,name,tipo,fuerte,debil,img);
         res.status(200).json(digimon);
     } catch (error) {
@@ -54,7 +54,7 @@ export function getCreate(req: Request, res: Response) {
 export function getFuerte(req: Request, res: Response) {
     try {
         const name = req.params.name && req.params.name;
-        if(!name){ throw "Se requiere el ID del digimon."}
+        if(!name){ throw "Se requiere el nombre del digimon."}
         const digimon = PokemonsService.getFuerte(name);
         res.status(200).json(digimon);
     } catch (error) {
@@ -65,7 +65,7 @@ export function getFuerte(req: Request, res: Response) {
 export function getDebil(req: Request, res: Response) {
     try {
         const name = req.params.name && req.params.name;
-        if(!name){ throw "Se requiere el ID del digimon."}
+        if(!name){ throw "Se requiere el nombre del digimon."}
         const digimon = PokemonsService.getDebil(name);
         res.status(200).json(digimon);
     } catch (error) {
