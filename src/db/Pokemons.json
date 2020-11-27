@@ -1,6 +1,6 @@
 [
     {
-        "name": "pikachu",
+        "name": "Pikachu",
         "number": 1,
         "type":[
             { "name": "Electrico", "strongAgainst": "Agua", "weakAgainst":"Tierra"}
@@ -9,7 +9,7 @@
 
     },
     {
-        "name": "charizard",
+        "name": "Charizard",
         "number": 2,
         "type":[
             { "name": "Fuego", "strongAgainst": "Acero", "weakAgainst":"Agua"}
@@ -18,7 +18,7 @@
 
     },
     {
-        "name": "agggron",
+        "name": "Agggron",
         "number": 3,
         "type":[
             { "name": "Acero", "strongAgainst": "Hielo", "weakAgainst":"Fuego"}
@@ -27,7 +27,7 @@
 
     },
     {
-        "name": "psyduck",
+        "name": "Psyduck",
         "number": 4,
         "type":[
             { "name": "Agua", "strongAgainst": "Fuego", "weakAgainst":"Tierra"}

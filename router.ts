@@ -20,7 +20,7 @@ router.get('/digimons/fuerte/:name', DigimonsController.getFuerte);// Trae contr
 router.get('/digimons/debil/:name', DigimonsController.getDebil); // Trae contra quienes el es Debil 
 router.get('/digimons/create/:id/:name/:nombreTipo/:fuerteTipo/:debilTipo/:img', DigimonsController.getCreate);// ingrese las variables por /
 
-//RUTAS
+//RUTAS    TODO SE DEBE BUSCAR EMPEZANDO CON MAYUSCULAS, EXCEPTO EL NOMBRE
 router.get('/pokemones', PokemonController.getAll);
 router.get('/pokemones/number/:number', PokemonController.getNumber);
 router.get('/pokemones/name/:name', PokemonController.getName);
